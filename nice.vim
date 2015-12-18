@@ -17,6 +17,7 @@ endif
 let g:colors_name="nice"
 
 hi Normal guibg=#2d2d32 guifg=#d2d2db gui=NONE
+hi IndentLine guibg=#2d2d32 guifg=#4b4b4d gui=NONE
 
 hi Exception guifg=#e15f90 guibg=NONE gui=NONE
 hi Type guifg=#97cf67 guibg=NONE gui=NONE
@@ -58,7 +59,7 @@ hi NonText guifg=#74af05 guibg=#2a2a2e gui=NONE
 hi Visual guifg=NONE guibg=#4c5773 gui=NONE
 hi StatusLine guifg=#1e1e23 guibg=#8fcd22 gui=bold
 hi StatusLineNC guifg=#1e1e23 guibg=#7f7f84 gui=NONE
-hi Folded guifg=#1e1e23 guibg=#727276 gui=NONE
+hi Folded guifg=#5d4d36 guibg=#dab176 gui=NONE
 
 
 " HTML syntax
@@ -86,6 +87,46 @@ hi javaScriptRepeat guifg=#d391b6 guibg=NONE gui=NONE
 hi javaScriptOperator guifg=#78c755 guibg=NONE gui=NONE
 hi javaScriptNumber guifg=#b7a2ca guibg=NONE gui=NONE
 hi javaScriptParen guifg=#b7a2ca guibg=NONE gui=NONE
+
+" SCSS
+hi scssSelectorName guifg=#ff8d12 guibg=NONE gui=NONE
+hi cssPseudoClassId guifg=#ff8d12 guibg=NONE gui=NONE
+hi scssSelectorChar guifg=#ff8d12 guibg=NONE gui=NONE
+hi scssDefinition guifg=#ff8d12 guibg=NONE gui=NONE
+hi scssSelector guifg=#e884a7 guibg=NONE gui=NONE
+hi scssVariable guifg=#ffc600 guibg=NONE gui=NONE
+hi scssInclude guifg=#78c755 guibg=NONE gui=NONE
+hi link scssExtend scssInclude
+hi cssTagName guifg=#e884a7 guibg=NONE gui=NONE
+" -- Attributi
+hi cssValueLength guifg=#7aaefc guibg=NONE gui=NONE
+hi link cssPositioningAttr cssValueLength
+hi link cssBackgroundAttr cssValueLength
+hi link scssAmpersand cssValueLength
+hi link cssColor cssValueLength
+hi link cssBoxAttr cssValueLength
+hi link cssValueNumber cssValueLength
+hi link cssCommonAttr cssValueLength
+hi link cssFlexibleBoxAttr cssValueLength
+" --  Property
+hi scssProperty guifg=#919ab4 guibg=NONE gui=NONE
+hi link cssUIProp scssProperty
+hi link cssPositioningProp scssProperty
+hi link cssDimensionProp scssProperty
+hi link cssPaddingProp scssProperty
+hi link cssMarginProp scssProperty
+hi link cssTextProp scssProperty
+hi link cssFontProp scssProperty
+hi link cssBorderOutlineProp scssProperty
+hi link cssBackgroundProp scssProperty
+hi link cssGeneratedContentProp scssProperty
+hi link cssTransformProp scssProperty
+hi link cssColorProp scssProperty
+
+" NERDTree
+hi NERDTreeDir guifg=#d1a861 guibg=NONE gui=NONE
+hi NERDTreeUp guifg=#d1a861 guibg=NONE gui=NONE
+hi NERDTreeHelp guibg=#2f323b guifg=#788996 gui=NONE
 "hi Cursor		
 "hi CursorIM	
 "hi Directory	
