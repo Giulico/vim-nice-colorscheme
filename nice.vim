@@ -64,6 +64,7 @@ hi Folded guifg=#5d4d36 guibg=#dab176 gui=NONE
 
 " HTML syntax
 hi htmlTagName guifg=#e884a7 guibg=NONE gui=NONE
+hi htmlTagN guifg=#e884a7 guibg=NONE gui=NONE
 hi htmlTag guifg=#ffffff guibg=NONE gui=NONE
 hi htmlEndTag guifg=#ffffff guibg=NONE gui=NONE
 hi htmlString guifg=#f7a771 guibg=NONE gui=NONE
@@ -122,6 +123,8 @@ hi link cssBackgroundProp scssProperty
 hi link cssGeneratedContentProp scssProperty
 hi link cssTransformProp scssProperty
 hi link cssColorProp scssProperty
+hi link cssTransitionProp scssProperty
+hi link cssBoxProp scssProperty
 
 " NERDTree
 hi NERDTreeDir guifg=#d1a861 guibg=NONE gui=NONE
